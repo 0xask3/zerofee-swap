@@ -3,10 +3,13 @@
   "rules": {
     "code-complexity": ["error", 8],
     "compiler-version": ["error", ">=0.8.19"],
+    "var-name-mixedcase": "off",
     "func-name-mixedcase": "off",
+    "const-name-snakecase": "off",
     "func-visibility": ["error", { "ignoreConstructors": true }],
     "max-line-length": ["error", 120],
-    "named-parameters-mapping": "warn",
+    "named-parameters-mapping": "off",
+    "reason-string": "off",
     "no-console": "off",
     "not-rely-on-time": "off"
   }
