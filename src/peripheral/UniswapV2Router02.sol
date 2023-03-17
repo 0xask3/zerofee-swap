@@ -1,14 +1,14 @@
 //SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.19;
 
-import "src/core/interfaces/IUniswapV2Factory.sol";
-import ".//libraries/TransferHelper.sol";
+import { IUniswapV2Factory } from "src/core/interfaces/IUniswapV2Factory.sol";
+import { TransferHelper } from ".//libraries/TransferHelper.sol";
 
-import "./interfaces/IUniswapV2Router02.sol";
-import "./libraries/UniswapV2Library.sol";
+import { IUniswapV2Router02 } from "./interfaces/IUniswapV2Router02.sol";
+import { UniswapV2Library, IUniswapV2Pair } from "./libraries/UniswapV2Library.sol";
 import { IERC20 } from "openzeppelin-contracts/contracts/interfaces/IERC20.sol";
 import { SafeMath } from "openzeppelin-contracts/contracts/utils/math/SafeMath.sol";
-import "./interfaces/IWETH.sol";
+import { IWETH } from "./interfaces/IWETH.sol";
 
 contract UniswapV2Router02 is IUniswapV2Router02 {
     using SafeMath for uint256;
